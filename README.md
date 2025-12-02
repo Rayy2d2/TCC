@@ -66,6 +66,34 @@ A proposta técnica inclui ainda a definição da arquitetura:
 - Infraestrutura e Deploy: Uso de Docker e publicação do código no GitHub.
 
 
+### Plano de Testes
+Plano de Testes
+
+Funcionalidade a ser testada
+
+- Geração automática do relatório final de conformidade após o usuário responder ao questionário.
+
+Objetivo do teste
+
+- Garantir que a aplicação gere relatórios precisos, consistentes e de acordo com as respostas fornecidas pelo usuário.
+
+Premissas
+
+- O usuário preenche todas as questões obrigatórias.
+
+- O backend está em funcionamento.
+
+- O banco de dados está acessível.
+
+Tipos de testes
+
+- Teste funcional
+
+- Teste de validação de dados
+
+- Teste de interface
+
+
 ### Repositório no GitHub
 
 O projeto foi versionado utilizando Git e disponibilizado em repositório público no GitHub.

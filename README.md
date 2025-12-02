@@ -285,99 +285,9 @@ Garantir que a aplicação gere relatórios:
 - **Compatibilidade:** Testes em múltiplos navegadores (Chrome, Firefox, Safari, Edge)
 - **Performance:** Tempo de carregamento e resposta
 
-### 📈 Métricas de Qualidade
-
-<div align="center">
-
-| Métrica | Meta | Status |
-|---------|------|--------|
-| Cobertura de Testes | > 80% | 🎯 |
-| Bugs Críticos | 0 | ✅ |
-| Tempo de Resposta | < 2s | ⚡ |
-| Taxa de Sucesso | > 95% | 📊 |
-
-</div>
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
----
-
-## 🚀 Como Usar
-
-### 📋 Pré-requisitos
-
-Antes de começar, certifique-se de ter instalado:
-```bash
-Node.js v14.0 ou superior
-npm v6.0 ou superior
-Git
-Docker (opcional)
-```
-
-### ⚙️ Instalação
-
-Siga estes passos para configurar o projeto localmente:
-
-1️⃣ **Clone o repositório**
-```bash
-git clone https://github.com/Rayy2d2/TCC.git
-```
-
-2️⃣ **Navegue até o diretório**
-```bash
-cd TCC
-```
-
-3️⃣ **Instale as dependências**
-```bash
-npm install
-```
-
-4️⃣ **Configure as variáveis de ambiente**
-```bash
-cp .env.example .env
-# Edite o arquivo .env com suas configurações
-```
-
-5️⃣ **Inicie o servidor de desenvolvimento**
-```bash
-npm start
-```
-
-6️⃣ **Acesse a aplicação**
-```
-🌐 http://localhost:3000
-```
-
-### 🐳 Usando Docker
-
-Para executar com Docker (recomendado para produção):
-```bash
-# Build da imagem
-docker build -t plataforma-iso27017 .
-
-# Executar o container
-docker run -p 3000:3000 plataforma-iso27017
-```
-
-### 🧪 Executar Testes
-```bash
-# Testes unitários
-npm test
-
-# Testes de integração
-npm run test:integration
-
-# Testes e2e
-npm run test:e2e
-
-# Cobertura de testes
-npm run test:coverage
-```
-
-<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
-
----
 
 ## 📂 Repositório no GitHub
 
@@ -390,47 +300,6 @@ O projeto está versionado utilizando **Git** e disponibilizado em repositório 
 ### **[🔗 https://github.com/Rayy2d2/TCC](https://github.com/Rayy2d2/TCC)**
 
 </div>
-
-### 📁 Estrutura do Repositório
-```
-TCC/
-│
-├── 📄 README.md                 # Documentação principal
-├── 📄 LICENSE                   # Licença do projeto
-├── 📦 package.json              # Dependências do projeto
-├── 🐳 Dockerfile                # Configuração Docker
-├── 📄 .env.example              # Exemplo de variáveis de ambiente
-│
-├── 📁 src/                      # Código-fonte
-│   ├── 📁 frontend/             # Frontend da aplicação
-│   │   ├── 📄 index.html        # Página principal
-│   │   ├── 📁 css/
-│   │   │   └── 📄 styles.css    # Estilos
-│   │   ├── 📁 js/
-│   │   │   └── 📄 script.js     # JavaScript
-│   │   └── 📁 assets/           # Imagens e recursos
-│   │
-│   └── 📁 backend/              # Backend da aplicação
-│       ├── 📄 server.js         # Servidor principal
-│       ├── 📁 routes/           # Rotas da API
-│       ├── 📁 controllers/      # Controladores
-│       ├── 📁 models/           # Modelos de dados
-│       └── 📁 utils/            # Utilitários
-│
-├── 📁 docs/                     # Documentação
-│   ├── 📄 architecture.md       # Arquitetura do sistema
-│   ├── 📄 api-documentation.md  # Documentação da API
-│   └── 📄 deployment.md         # Guia de deploy
-│
-├── 📁 tests/                    # Testes
-│   ├── 📁 unit/                 # Testes unitários
-│   ├── 📁 integration/          # Testes de integração
-│   └── 📄 plano-testes.md       # Plano de testes
-│
-└── 📁 scripts/                  # Scripts auxiliares
-    ├── 📄 setup.sh              # Setup inicial
-    └── 📄 deploy.sh             # Script de deploy
-```
 
 ### 📦 Conteúdo do Repositório
 
@@ -477,29 +346,8 @@ TCC/
 </tr>
 </table>
 
-### 🤝 Como Contribuir
-
-Contribuições são sempre bem-vindas! Para contribuir:
-
-1. 🍴 Faça um fork do projeto
-2. 🌿 Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. ✍️ Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. 📤 Push para a branch (`git push origin feature/AmazingFeature`)
-5. 🔄 Abra um Pull Request
-
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
----
-
-## 📞 Contato
-
-<div align="center">
-
-**Desenvolvedor Principal**
-
-[![LinkedIn][LinkedIn.badge]][LinkedIn-url]
-[![GitHub][GitHub.badge]][GitHub-url]
-[![Email][Email.badge]][Email-url]
 
 **Link do Projeto:** [https://github.com/Rayy2d2/TCC](https://github.com/Rayy2d2/TCC)
 
@@ -513,28 +361,6 @@ Contribuições são sempre bem-vindas! Para contribuir:
 
 Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
 
----
-
-## 🙏 Agradecimentos
-
-Agradecimentos especiais a:
-
-* Professor(a) orientador(a) pela orientação ao longo do projeto
-* Colegas de turma pelas discussões e feedback
-* Empresas que participaram dos testes de usabilidade
-* Comunidade open-source pelas ferramentas utilizadas
-
----
-
-<div align="center">
-  
-  ### ⭐ **Feito com ❤️ e muito ☕**
-  
-  <sub>Se este projeto foi útil para você, considere dar uma estrela!</sub>
-  
-  [![Star](https://img.shields.io/github/stars/Rayy2d2/TCC?style=social)](https://github.com/Rayy2d2/TCC)
-  
-</div>
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 

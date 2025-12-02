@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz de Segurança em Nuvem - TrustCloud</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="header-container">
+      <img src="logo.png" alt="Logo" class="logo" onerror="this.style.display='none'" />
+      <nav>
+        <ul>
+          <li><a href="#" onclick="showPage('quizPage'); resetQuiz()">Novo Quiz</a></li>
+          <li><a href="#" onclick="showPage('historyPage'); loadHistory()">Histórico</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PÁGINA DO QUIZ -->
+  <div id="quizPage" class="page active">
+    <div class="container">
+      <div id="game">
+        <div id="hud">
+          <div class="hud-item">
+            <p id="progressText" class="hud-prefix">Pergunta</p>
+            <div id="progressBar">
+              <div id="progressBarFull"></div>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="question">Carregando pergunta...</h2>
+
+        <div class="choice-container" data-choice="1">
+          <p class="choice-prefix">A</p>
+          <p class="choice-text" data-number="1">Carregando...</p>
+        </div>
+        <div class="choice-container" data-choice="2">
+          <p class="choice-prefix">B</p>
+          <p class="choice-text" data-number="2">Carregando...</p>
+        </div>
+        <div class="choice-container" data-choice="3">
+          <p class="choice-prefix">C</p>
+          <p class="choice-text" data-number="3">Carregando...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PÁGINA DE RESULTADOS -->
+  <div id="resultPage" class="page">
+    <div class="container">
+      <div class="result-container">
+        <h1>Resultado da Avaliação</h1>
+        
+        <div class="score-display">
+          <div class="score-circle" id="scoreCircle">
+            <div class="score-value" id="scoreValue">0%</div>
+            <div class="score-label">Conformidade</div>
+          </div>
+        </div>
+
+        <div class="recommendation-card">
+          <div class="card-header" id="cardHeader">
+            <span class="status-badge" id="statusBadge"></span>
+            <h2 id="diagnosisTitle"></h2>
+          </div>
+          
+          <div class="card-content">
+            <div class="diagnosis-section">
+              <h3>🔍 Diagnóstico</h3>
+              <p id="diagnosisText"></p>
+            </div>
+
+            <div class="recommendations-section">
+              <h3>💡 Recomendações</h3>
+              <ul id="recommendationsList"></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button class="btn" onclick="resetQuiz()">🔄 Refazer Avaliação</button>
+          <button class="btn btn-secondary" onclick="showPage('historyPage'); loadHistory()">📊 Ver Histórico</button>
+          <button class="btn btn-secondary" onclick="window.print()">📄 Imprimir Relatório</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PÁGINA DE HISTÓRICO -->
+  <div id="historyPage" class="page">
+    <div class="container">
+      <div class="result-container">
+        <h1>📊 Histórico de Avaliações</h1>
+        
+        <div class="history-stats">
+          <div class="stat-card">
+            <div class="stat-icon">📈</div>
+            <div class="stat-value" id="totalTests">0</div>
+            <div class="stat-label">Avaliações Realizadas</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🎯</div>
+            <div class="stat-value" id="avgScore">0%</div>
+            <div class="stat-label">Média de Conformidade</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">⭐</div>
+            <div class="stat-value" id="bestScore">0%</div>
+            <div class="stat-label">Melhor Resultado</div>
+          </div>
+        </div>
+
+        <div class="history-actions">
+          <button class="btn" onclick="showPage('quizPage'); resetQuiz()">🆕 Nova Avaliação</button>
+          <button class="btn btn-secondary" onclick="clearHistory()">🗑️ Limpar Histórico</button>
+        </div>
+
+        <div id="historyList" class="history-list">
+          <!-- Histórico será inserido aqui via JavaScript -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>

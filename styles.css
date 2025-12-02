@@ -1,0 +1,555 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Styles */
+header {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+    max-width: 200px;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-buttons {
+    display: flex;
+}
+
+.login-btn {
+    margin-right: 10px;
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #FF096C;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #192731;
+    padding: 60px 0;
+}
+
+.hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.hero-content h1 {
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 64px;
+    letter-spacing: -1px;
+    color: #fff;
+}
+
+.hero-content p {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #dcd4d4;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #FF096C;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.hero-image img{
+    width: 100%;
+    height: 100%;
+}      
+
+.image-placeholder {
+    width: 560px;
+    height: 640px;
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    box-shadow: #000 0px 0px ;
+}
+
+/* Benefits Section */
+.benefits {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.benefits h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.benefits-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.benefit-item {
+    flex: 1;
+}
+
+.benefit-icon {
+    width: 50px;
+    height: 50px;
+    background: #f5f5f5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.benefit-icon span {
+    font-size: 24px;
+}
+
+.benefit-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.benefit-description {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    background: #fff;
+    padding: 40px 0;
+    border-top: 1px solid #eee;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+}
+
+.newsletter {
+    flex: 1.5;
+}
+
+.newsletter h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.newsletter p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.newsletter-form {
+    display: flex;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    font-size: 12px;
+    color: #999;
+}
+
+.footer-links a {
+    color: #999;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #999;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+    }
+    
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    .benefits-container {
+        flex-direction: column;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .footer-column,
+    .newsletter {
+        margin-bottom: 30px;
+    }
+    
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    nav ul {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-links {
+        margin: 15px 0;
+    }
+}
+  
+  /* Ajuste para a posição das nuvens flutuantes */
+.floating-clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    pointer-events: none;  /* Para não interferir na interação com outros elementos */
+}
+
+/* Estilo para as nuvens individuais */
+.cloud {
+    position: absolute;
+    animation: move-clouds 20s linear infinite;
+    opacity: 0.7; /* Adicionando um pouco de transparência para uma sensação mais suave */
+}
+
+./* Estilo para as nuvens individuais */
+/* Container das nuvens apenas no fundo superior */
+.floating-clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px; /* faixa restrita só no topo */
+    z-index: 0; /* sempre atrás */
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* Estilo das nuvens */
+.cloud {
+    position: absolute;
+    animation: move-clouds 40s linear infinite;
+    opacity: 0.6;
+    width: 180px;
+    height: auto;
+}
+
+/* Nuvens bem espalhadas, em alturas diferentes */
+.cloud-1 {
+    left: -20%;
+    top: 10px;   /* mais no alto */
+    width: 160px;
+    animation-duration: 38s;
+}
+
+.cloud-2 {
+    left: -30%;
+    top: 60px;   /* afastada verticalmente */
+    width: 200px;
+    animation-duration: 42s;
+}
+
+.cloud-3 {
+    left: -25%;
+    top: 120px;  /* mais embaixo, mas ainda no fundo */
+    width: 170px;
+    animation-duration: 36s;
+}
+
+.cloud-4 {
+    left: -40%;
+    top: 30px;
+    width: 190px;
+    animation-duration: 44s;
+}
+
+.cloud-5 {
+    left: -15%;
+    top: 90px;
+    width: 210px;
+    animation-duration: 40s;
+}
+
+/* Movimento horizontal suave */
+@keyframes move-clouds {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(120vw);
+    }
+}
+
+
+/* Estilo para a onda de nuvem */
+.cloud-wave {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    margin-top: -150px;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .cloud-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Ajuste a seção de benefícios para ficar sobre a onda */
+  .benefits {
+    position: relative;
+    z-index: 2;
+    padding-top: 100px;
+    background-color: #ffffff;
+  }
+  
+  /* Ajuste a seção hero para ter um fundo escuro */
+  .hero {
+    background-color: #182430;
+    color: white;
+    padding-bottom: 150px;
+    position: relative;
+  }
+  
+  /* Ajuste o texto da seção hero para ser branco */
+  .hero-content h1, 
+  .hero-content p {
+    color: white;
+  }
+  .cloud-divider {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: url('/home/ray/tcc/nuvem2') no-repeat center bottom;
+    background-size: cover;
+    margin-top: -150px; /* sobrepõe a parte inferior da hero */
+    z-index: 3;
+    pointer-events: none;
+  }
+  
+  /* Ajustes para garantir que a hero e a benefits não cubram as nuvens */
+  .hero {
+    background-color: #182430;
+    color: white;
+    padding-bottom: 150px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .benefits {
+    position: relative;
+    z-index: 4;
+    padding-top: 80px;
+    background-color: #ffffff;
+  }
+/* Nuvem divisor na parte inferior da hero */
+.cloud-middle {
+    position: absolute;
+    bottom: -120px;           /* Posiciona na parte inferior da hero */
+    left: 0;
+    width: 100%;
+    height: 150px;           /* Altura do divisor */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;   /* Alinha na parte inferior */
+    z-index: 5;              /* Fica acima do fundo, mas abaixo do conteúdo */
+    pointer-events: none;    /* Não interfere na interação */
+}
+
+.cloud-middle img {
+    width: 100%;             /* Ocupa toda a largura */
+    max-width: none;         /* Remove limitação de largura */
+    height: auto;
+    object-fit: cover;       /* Cobre toda a área mantendo proporção */          /* Leve transparência */
+}
+
+/* Ajuste na seção hero para acomodar o divisor */
+.hero {
+    background-color: #192731;
+    padding: 60px 0 100px 0;  /* Padding inferior maior para acomodar a nuvem */
+    position: relative;       /* Necessário para posicionamento absoluto da nuvem */
+    overflow: hidden;         /* Esconde partes que saem da seção */
+}
+
+/* Ajuste na seção benefits para não sobrepor */
+.benefits {
+    padding-top: 100px;       /* Espaço superior para não sobrepor a nuvem */
+    background-color: #ffffff;
+    position: relative;
+    z-index: 4;              /* Fica abaixo da nuvem */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .cloud-middle {
+        bottom: -30px;        /* Ajuste para mobile */
+        height: 100px;        /* Altura menor em mobile */
+    }
+    
+    .hero {
+        padding-bottom: 80px;  /* Menos padding em mobile */
+    }
+    
+    .benefits {
+        padding-top: 70px;     /* Menos espaço em mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .cloud-middle {
+        bottom: -20px;
+        height: 80px;
+    }
+    
+    .hero {
+        padding-bottom: 60px;
+    }
+    
+    .benefits {
+        padding-top: 50px;
+    }
+}
+
+
+
+  
